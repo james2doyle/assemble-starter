@@ -1,0 +1,154 @@
+@import "imports/__normalize";
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+@mixin fade($start) {
+  opacity: $start;
+  -webkit-backface-visibility: hidden;
+  transition: opacity 0.2s ease;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+$main: #222;
+$accent: #ff6666;
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font: normal normal normal 16px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  color: $main;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+*, *:after, *:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* IE6/7 support */
+.clearfix {
+  *zoom: 1;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+  &:hover {
+    color: $accent;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  ul {
+    margin: 1em 0;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 1em;
+      a.active {
+        color: $accent;
+      }
+    }
+  }
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  max-height: 402px;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1140px) {
+
+}
+
+@media only screen and (max-width: 1139px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+
+}
