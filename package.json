@@ -1,0 +1,26 @@
+{
+  "name": "assemble-starter",
+  "description": "A starting point for assemble projects",
+  "version": "1.0.0",
+  "homepage": "http://github.com/james2doyle/assemble-starter",
+  "author": {
+    "name": "James Doyle",
+    "email": "james2doyle@gmail.com",
+    "url": "http://ohdoylerules.com/"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  }],
+  "dependencies": {
+    "assemble": "~0.4.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sass": "*",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-autoprefixer": "~0.3.0"
+  }
+}
